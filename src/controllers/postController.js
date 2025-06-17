@@ -38,20 +38,20 @@ const mostrarPublicacion = async (req, res) => {
             },
             {
                 model: Comment,
-                attributes: ['comment'],
-                include: [
-                    {
-                        model: User,
-                        attributes: ['nickName']
-                    }
-                ]
+                attributes: ['comment']
             },
-            Post_Images
+            {
+                model: Post_Images, 
+                attributes: ['url']
+            },
+            {
+                model: Tag, 
+                attributes: ['tag']
+            }
         ]
-    })
-
-    res.status(200).json(publicaciones)
-}
+    });
+    res.status(200).json(publicaciones);
+};
 
 
 const actualizarPublicacion = async (req, res) => {
