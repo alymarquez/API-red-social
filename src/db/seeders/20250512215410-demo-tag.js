@@ -18,6 +18,11 @@ module.exports = {
         tag: 'Mascotas',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+            {
+        tag: 'Comidas',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ]);
   },
