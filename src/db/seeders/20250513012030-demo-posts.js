@@ -41,31 +41,31 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        userId: 2,
+        userId: 5,
         content: 'Día en el parque de la costa!',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        userId: 2,
+        userId: 4,
         content: 'Paseando a mi perro Rocco',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        userId: 2,
+        userId: 1,
         content: 'Cumpleaños 100 de la abuela',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        userId: 2,
+        userId: 1,
         content: 'Navidad 2025',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        userId: 2,
+        userId: 3,
         content: 'Salida al cine',
         createdAt: new Date(),
         updatedAt: new Date()
