@@ -23,8 +23,8 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        nickName: 'Titi',
-        email: 'thiagomutuverria@hotmail.com',
+        nickName: 'LCardona',
+        email: 'luckyStrike@yahoo.com',
         createdAt: new Date(),
         updatedAt: new Date()
       }
