@@ -36,43 +36,37 @@ module.exports = {
       },
       {
         userId: 2,
-        content: 'Me gusta mimir',
+        content: 'Desayunando un cafecito',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         userId: 2,
-        content: 'Me gusta mimir',
+        content: 'Día en el parque de la costa!',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         userId: 2,
-        content: 'Me gusta mimir',
+        content: 'Paseando a mi perro Rocco',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         userId: 2,
-        content: 'Me gusta mimir',
+        content: 'Cumpleaños 100 de la abuela',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         userId: 2,
-        content: 'Me gusta mimir',
+        content: 'Navidad 2025',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         userId: 2,
-        content: 'Me gusta mimir',
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        userId: 2,
-        content: 'Me gusta mimir',
+        content: 'Salida al cine',
         createdAt: new Date(),
         updatedAt: new Date()
       }
