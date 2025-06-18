@@ -39,7 +39,44 @@ module.exports = {
         content: 'Me gusta mimir',
         createdAt: new Date(),
         updatedAt: new Date()
-      }   
+      },
+      {
+        userId: 2,
+        content: 'Me gusta mimir',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        userId: 2,
+        content: 'Me gusta mimir',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        userId: 2,
+        content: 'Me gusta mimir',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        userId: 2,
+        content: 'Me gusta mimir',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        userId: 2,
+        content: 'Me gusta mimir',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        userId: 2,
+        content: 'Me gusta mimir',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+
     ]);
   },
 

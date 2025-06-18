@@ -16,25 +16,25 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-            {
+      {
         url: "https://picsum.photos/id/99/200/300",
         postId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
-            {
+      {
         url: "https://picsum.photos/id/45/200/300",
         postId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
-            {
+      {
         url: "https://picsum.photos/id/85/200/300",
         postId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
-            {
+      {
         url: "https://picsum.photos/id/56/200/300",
         postId: 3,
         createdAt: new Date(),

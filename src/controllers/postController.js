@@ -68,11 +68,25 @@ const actualizarPublicacion = async (req, res) => {
             return res.status(404).json({ message: `No existe usuario con ID: ${userId}` })
         }
 
+        await Post_Images.destroy({
+            where: { postId: publicacion.id }
+        });
+
+        if(imagenes){
+            for(const imagen of imagenes){
+                await crearImagen(imagen.url, publicacion.id)
+            }
+        }
+
         publicacion.userId = userId
         publicacion.content = content
         await publicacion.save()
 
-        res.status(200).json(publicacion)
+        const publicacionConImagenes = await Post.findByPk(publicacion.id, {
+            include: [Post_Images]
+        })
+    
+        res.status(200).json(publicacionConImagenes)
     } catch (error) {
         console.error(error)
         return res.status(500).json({ error: 'Error al actualizar publicación' })
