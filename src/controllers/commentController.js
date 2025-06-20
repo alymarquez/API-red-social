@@ -10,7 +10,16 @@ const crearComentario = async (req, res) => {
             return res.status(404).json({message:"Post o Usuario inexistentes"})
         }
         const comentario = await Comment.create({postId, userId, comment})
-        res.status(200).json(comentario)
+        
+        const comentarioCompleto = await Comment.findByPk(comentario.id, {
+            include: [{
+                model: User,
+                as: 'User',
+                attributes: ['nickName']
+            }]
+        });
+
+        res.status(201).json(comentarioCompleto); 
     }catch(error){
         console.error(error)
         res.status(500).json({ error: 'Error al crear comentario' })
