@@ -38,7 +38,14 @@ const obtenerComentariosDeUnPost = async (req, res) => {
     const fechaLimite = new Date();
     fechaLimite.setMonth(fechaLimite.getMonth() - meses);
 
-    const comentariosDeUnPost = await Comment.findAll({ where: { postId: postId } });
+    const comentariosDeUnPost = await Comment.findAll({
+        where: { postId: postId },
+            include: [{
+                model: User,
+                as: 'User', 
+                attributes: ['nickName']
+            }]
+        });
 
     const comentariosFiltrados = comentariosDeUnPost.filter(comentario => {
         return new Date(comentario.createdAt) >= fechaLimite;
