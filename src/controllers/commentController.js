@@ -31,6 +31,22 @@ const mostrarComentarios = async (req, res) => {
     res.status(200).json(comentariosFiltrados)
 }
 
+const obtenerComentariosDeUnPost = async (req, res) => {
+    const postId = req.params.postId;
+
+    const meses = parseInt(process.env.ANTIGUEDAD_COMENTARIOS || '6');
+    const fechaLimite = new Date();
+    fechaLimite.setMonth(fechaLimite.getMonth() - meses);
+
+    const comentariosDeUnPost = await Comment.findAll({ where: { postId: postId } });
+
+    const comentariosFiltrados = comentariosDeUnPost.filter(comentario => {
+        return new Date(comentario.createdAt) >= fechaLimite;
+    });
+
+    res.status(200).json(comentariosFiltrados);
+}
+
 const actualizarComentario = async (req,res)=>{
     try{
         const id = req.params.id
@@ -70,9 +86,12 @@ const eliminarComentario = async (req,res)=>{
     }
 }
 
+
+
 module.exports = {
     crearComentario,
     mostrarComentarios,
+    obtenerComentariosDeUnPost,
     actualizarComentario,
     eliminarComentario
 }

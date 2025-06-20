@@ -16,6 +16,23 @@ const mostrarUsuarios = async (req, res) => {
     res.status(200).json(usuarios)
 }
 
+const obtenerUsuarioPorId = async (req, res) => {
+    try {
+        const id = req.params.id
+        const usuario = await User.findByPk(id)
+
+        if (!usuario) {
+            return res.status(404).json({ message: 'Usuario no encontrado' });
+        }
+
+        res.status(200).json(usuario);
+
+    } catch (error) {
+        console.error('Error al obtener el Usuario por ID:', error);
+        res.status(500).json({ message: 'Error interno del servidor al obtener el usuario', error: error.message });
+    }
+};
+
 const actualizarUsuario = async (req,res)=>{
     try {
         const id = req.params.id
@@ -113,6 +130,7 @@ const dejarDeSeguirUsuario = async (req,res) => {
 module.exports = {
     crearUsuario,
     mostrarUsuarios,
+    obtenerUsuarioPorId,
     actualizarUsuario,
     eliminarUsuario,
     seguirUsuario,

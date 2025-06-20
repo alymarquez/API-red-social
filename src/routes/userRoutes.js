@@ -4,6 +4,7 @@ const validarUser = require('../middleware/validarUser')
 const router = Router()
 
 router.get('/', userController.mostrarUsuarios)
+router.get('/:id', userController.obtenerUsuarioPorId)
 router.post('/', validarUser, userController.crearUsuario)
 router.put('/:id', validarUser, userController.actualizarUsuario)
 router.delete('/:id', userController.eliminarUsuario)

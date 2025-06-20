@@ -11,14 +11,20 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        nickName: 'Aliinyta',
-        email: '123123@gmail.com',
+        nickName: 'Alu',
+        email: 'unidadAritmeticoLogica@gmail.com',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         nickName: 'Alesi',
         email: 'elmascapodefortnite@ojoconmigo.com',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nickName: 'Titi',
+        email: 'tititiMutu@pipipi.com',
         createdAt: new Date(),
         updatedAt: new Date()
       },
