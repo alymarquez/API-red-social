@@ -6,7 +6,8 @@ const validarTag = require('../middleware/validarTag')
 const postController = require('../controllers/postController')
 
 // Post
-router.get('/', postController.mostrarPublicacion)
+router.get('/', postController.obtenerPublicaciones)
+router.get('/:id', postController.obtenerPublicacionPorId)
 router.post('/', validarPost,postController.crearPublicacion)
 router.put('/:id', validarPost, postController.actualizarPublicacion)
 router.delete('/:id', postController.eliminarPublicacion)

@@ -29,7 +29,7 @@ const crearPublicacion = async (req, res) => {
 }
 
 
-const mostrarPublicacion = async (req, res) => {
+const obtenerPublicaciones = async (req, res) => {
     const publicaciones = await Post.findAll({
         include: [
             {
@@ -51,6 +51,42 @@ const mostrarPublicacion = async (req, res) => {
         ]
     });
     res.status(200).json(publicaciones);
+};
+
+const obtenerPublicacionPorId = async (req, res) => {
+    try {
+        const id = req.params.id
+        const publicacion = await Post.findByPk(id, {
+            include: [
+                {
+                    model: User,
+                    attributes: ['nickName', 'email']
+                },
+                {
+                    model: Comment,
+                    attributes: ['comment']
+                },
+                {
+                    model: Post_Images, 
+                    attributes: ['url']
+                },
+                {
+                    model: Tag, 
+                    attributes: ['tag']
+                }
+            ]
+        });
+
+        if (!publicacion) {
+            return res.status(404).json({ message: 'Publicación no encontrada' });
+        }
+
+        res.status(200).json(publicacion);
+
+    } catch (error) {
+        console.error('Error al obtener la publicación por ID:', error);
+        res.status(500).json({ message: 'Error interno del servidor al obtener la publicación', error: error.message });
+    }
 };
 
 
@@ -221,7 +257,8 @@ const obtenerTagsDeUnPost = async (req, res) => {
 
 module.exports = {
     crearPublicacion,
-    mostrarPublicacion,
+    obtenerPublicaciones,
+    obtenerPublicacionPorId,
     actualizarPublicacion,
     eliminarPublicacion,
     eliminarImagen,
