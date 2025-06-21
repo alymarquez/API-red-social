@@ -10,7 +10,7 @@ const commentSchema = Joi.object({
         .required(),
 
     comment: Joi.string()
-        .min(4)
+        .min(1)
         .max(250)
         .required()
 });
