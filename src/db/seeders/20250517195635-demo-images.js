@@ -35,7 +35,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        url: "https://picsum.photos/id/56/800/500",
+        url: "https://mitchcactus.co/wp-content/uploads/2025/04/Fortnite-player-count.webp",
         postId: 3,
         createdAt: new Date(),
         updatedAt: new Date()

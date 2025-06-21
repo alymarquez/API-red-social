@@ -186,8 +186,7 @@ const actualizarImagen = async (req,res)=>{
 
 const asociarTagAPost = async (req, res) => {
     try {
-        const { tagId } = req.body
-        const postId = req.params.id
+        const { postId, tagId } = req.params
 
         const post = await Post.findByPk(postId)
         const tag = await Tag.findByPk(tagId)

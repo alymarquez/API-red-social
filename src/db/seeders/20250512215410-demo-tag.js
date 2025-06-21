@@ -19,8 +19,13 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-            {
+      {
         tag: 'Comidas',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        tag: 'Motivación',
         createdAt: new Date(),
         updatedAt: new Date()
       }

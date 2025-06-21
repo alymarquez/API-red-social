@@ -18,13 +18,13 @@ module.exports = {
       },
       {
         userId: 3,
-        content: 'Experto en robar kills',
+        content: 'Experto en robar kills, no sólo en Fortnite, también en Rainbow Six, no sé hacer otra cosa que robar, pues soy el mayor ladrón',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         userId: 4,
-        content: 'Que tus sueños sean más grandes que tus miedos',
+        content: 'Que tus sueños sean más grandes que tus miedos, lo suficiente para impulsarte a volar alto, a creer sin límites y a transformar cada obstáculo en un escalón hacia aquello que tu corazón anhela.',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -54,7 +54,7 @@ module.exports = {
       },
       {
         userId: 1,
-        content: 'Cumpleaños 100 de la abuela',
+        content: 'Cumpleaños 100 de la abuela, con un poco de suerte me va a ver recibirme',
         createdAt: new Date(),
         updatedAt: new Date()
       },

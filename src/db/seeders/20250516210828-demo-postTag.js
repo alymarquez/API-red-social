@@ -27,6 +27,11 @@ await queryInterface.bulkInsert('PostTag', [
         tagId: 4,
         createdAt: new Date(),
         updatedAt: new Date()
+      },{
+        postId: 4,
+        tagId: 5,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ]);
   },
