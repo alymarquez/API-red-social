@@ -48,30 +48,23 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      // Post 4: 'Sueños sin límites' - Imágenes de inspiración/paisajes
+      // Post 5: 'Frases motivacionales'
       {
-        postId: 4,
+        postId: 5,
         url: "https://picsum.photos/id/1019/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        postId: 4,
+        postId: 5,
         url: "https://picsum.photos/id/1043/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      // Post 5: 'Frases motivacionales'
+      
       {
         postId: 5,
         url: "https://picsum.photos/id/1080/800/500",
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      // Post 6: 'Un buen comienzo del día'
-      {
-        postId: 6,
-        url: "https://picsum.photos/id/29/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
