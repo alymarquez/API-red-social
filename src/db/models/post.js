@@ -44,6 +44,7 @@ module.exports = (sequelize, DataTypes) => {
           key: 'id'
         }
     },
+    title: DataTypes.STRING,
     content: DataTypes.STRING
   }, {
     sequelize,

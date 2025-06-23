@@ -12,6 +12,11 @@ const postSchema = Joi.object({
         .max(250)
         .required(),
     
+    titulo: Joi.string()
+        .min(3)
+        .max(20)
+        .required(),
+    
     imagenes: Joi.array()
         .items(schemaPost_Images)
         .max(5)

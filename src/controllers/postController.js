@@ -3,7 +3,7 @@ const { crearImagen } = require('./postImagesController')
 
 const crearPublicacion = async (req, res) => {
     try{
-        const { userId, content, imagenes } = req.body
+        const { userId, content, title, imagenes } = req.body
         const user = await User.findByPk(userId)
         
         if(!user){
@@ -94,7 +94,7 @@ const actualizarPublicacion = async (req, res) => {
     try {
         const id = req.params.id
         const publicacion = await Post.findByPk(id)
-        const { userId, content, imagenes } = req.body
+        const { userId, content, title, imagenes } = req.body
         const usuario = await Post.findByPk(userId)
 
         if (!publicacion) {
@@ -116,6 +116,7 @@ const actualizarPublicacion = async (req, res) => {
 
         publicacion.userId = userId
         publicacion.content = content
+        publicacion.title = title
         await publicacion.save()
 
         const publicacionConImagenes = await Post.findByPk(publicacion.id, {

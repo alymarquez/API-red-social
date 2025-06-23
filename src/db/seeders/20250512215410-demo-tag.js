@@ -5,27 +5,37 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Tags', [
       {
-        tag: 'Tecnología',
+        tag: 'Bienvenida',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        tag: 'Paisajes',
+        tag: 'VidaDiaria',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        tag: 'Mascotas',
+        tag: 'Gaming',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        tag: 'Comidas',
+        tag: 'Inspiración',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        tag: 'Motivación',
+        tag: 'Celebración',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        tag: 'Entretenimiento',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        tag: 'Mascotas', // Mantuvimos esta porque encaja perfecto
         createdAt: new Date(),
         updatedAt: new Date()
       }
