@@ -4,35 +4,34 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Post_Images', [
-      // Post 1: '¡Bienvenidos a nuestra comunidad!' - Varias imágenes de comunidad/conexión
-      // Usamos IDs de Picsum que suelen ser paisajes o escenas generales.
+      // Post 1: '¡Bienvenidos a nuestra comunidad!'
       {
         postId: 1,
-        url: "https://i.ibb.co/LzXXSm8H/Logo-Pez-World.png", // Paisaje genérico
+        url: "https://i.ibb.co/LzXXSm8H/Logo-Pez-World.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         postId: 1,
-        url: "https://picsum.photos/id/10/800/500",   // Camino, conexión
+        url: "https://picsum.photos/id/10/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         postId: 1,
-        url: "https://picsum.photos/id/20/800/500",   // Gente interactuando
+        url: "https://picsum.photos/id/20/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         postId: 1,
-        url: "https://picsum.photos/id/237/800/500",  // Perro (genérico, para conectar)
+        url: "https://picsum.photos/id/237/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         postId: 1,
-        url: "https://picsum.photos/id/1004/800/500", // Árbol, naturaleza (unión)
+        url: "https://picsum.photos/id/1004/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -42,7 +41,7 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      // Post 3: 'El Ladrón de Kills' - Imagen de Fortnite (MANTENIDA)
+      // Post 3: 'El Ladrón de Kills' - Imagen de Fortnite
       {
         postId: 3,
         url: "https://mitchcactus.co/wp-content/uploads/2025/04/Fortnite-player-count.webp",
@@ -52,47 +51,44 @@ module.exports = {
       // Post 4: 'Sueños sin límites' - Imágenes de inspiración/paisajes
       {
         postId: 4,
-        url: "https://picsum.photos/id/1019/800/500", // Montañas, cielo
+        url: "https://picsum.photos/id/1019/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         postId: 4,
-        url: "https://picsum.photos/id/1043/800/500", // Vistas amplias
+        url: "https://picsum.photos/id/1043/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      // Post 5: 'Frases motivacionales' - Imagen de cita/inspiración
-      // ID de Picsum que puede ser un fondo abstracto o simple.
+      // Post 5: 'Frases motivacionales'
       {
         postId: 5,
-        url: "https://picsum.photos/id/1080/800/500", // Fondo abstracto, minimalista
+        url: "https://picsum.photos/id/1080/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      // Post 6: 'Un buen comienzo del día' (cafecito)
-      // ID de Picsum que se asemeja a un café.
+      // Post 6: 'Un buen comienzo del día'
       {
         postId: 6,
-        url: "https://picsum.photos/id/29/800/500",   // Taza o bebida
+        url: "https://picsum.photos/id/29/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      // Post 7: 'Diversión en el Parque de la Costa' - Imágenes de parque de diversiones
-      // IDs de Picsum que pueden ser lugares con gente o actividad.
+      // Post 7: 'Diversión en el Parque de la Costa'
       {
         postId: 7,
-        url: "https://picsum.photos/id/1024/800/500", // Escenario con gente
+        url: "https://picsum.photos/id/1024/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         postId: 7,
-        url: "https://picsum.photos/id/1039/800/500", // Ciudad nocturna (luces, diversión)
+        url: "https://picsum.photos/id/1039/800/500",
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      // Post 8: 'Paseando a mi perro Rocco' - Imágenes de Rocco (MANTENIDAS)
+      // Post 8: 'Paseando a mi perro Rocco'
       {
         postId: 8,
         url: "https://i.ibb.co/n9LGCg1/IMG-20200810-WA0001.jpg",
