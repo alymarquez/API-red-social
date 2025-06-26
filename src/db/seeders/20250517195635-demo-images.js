@@ -51,20 +51,20 @@ module.exports = {
       // Post 5: 'Frases motivacionales'
       {
         postId: 5,
-        url: "https://picsum.photos/id/1019/800/500",
+        url: "https://services.meteored.com/img/article/papa-noel-reparte-regalos-navidad-usando-fisica-cuantica-santa-juguetes-trineo-renos-carta-1702717089004_1024.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         postId: 5,
-        url: "https://picsum.photos/id/1043/800/500",
+        url: "https://i.ibb.co/zhzTZSqr/Whats-App-Image-2025-06-25-at-23-32-06.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       
       {
         postId: 5,
-        url: "https://picsum.photos/id/1080/800/500",
+        url: "https://contracorriente.red/wp-content/uploads/2024/12/Portada-de-Teddy-Navidades-diversas-Voces-Diversas.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },

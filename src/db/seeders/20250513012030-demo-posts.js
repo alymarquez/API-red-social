@@ -34,8 +34,8 @@ module.exports = {
       },
       {
         userId: 4,
-        title: 'Frases motivacionales',
-        content: 'Seguime para más frases motivacionales que te inspirarán a alcanzar tus metas y vivir una vida plena. ¡No te las pierdas!',
+        title: 'Navidad 2025',
+        content: '¡Feliz Navidad 2025 y Feliz Cumpleaños para mi!!! Esperando con ansias las fiestas y pasar tiempo con la familia. ¡Qué alegría!',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -68,12 +68,12 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        userId: 1,
-        title: 'Feliz Navidad 2025',
-        content: '¡Navidad 2025! Esperando con ansias las fiestas y pasar tiempo con la familia. ¡Qué alegría!',
+        userId: 4,
+        title: 'Frases motivacionales',
+        content: 'Seguime para más frases motivacionales que te inspirarán a alcanzar tus metas y vivir una vida plena. ¡No te las pierdas!',
         createdAt: new Date(),
         updatedAt: new Date()
-      },
+      },      
       {
         userId: 3,
         title: 'Noche de cine',
