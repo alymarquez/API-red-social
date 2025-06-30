@@ -12,7 +12,7 @@ const postSchema = Joi.object({
         .max(250)
         .required(),
     
-    titulo: Joi.string()
+    title: Joi.string()
         .min(3)
         .max(20)
         .required(),

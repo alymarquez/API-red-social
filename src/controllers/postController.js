@@ -9,7 +9,8 @@ const crearPublicacion = async (req, res) => {
         if(!user){
             return res.status(404).json({message:"Usuario inexistente"})
         }
-        const publicacion = await Post.create({ userId, content })
+        
+        const publicacion = await Post.create({ userId, content, title })
 
         if (imagenes) {
             for (const imagen of imagenes) {
