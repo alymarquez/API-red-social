@@ -48,8 +48,8 @@ module.exports = {
       },
       {
         userId: 5,
-        title: 'Diversión en el Parque de la Costa',
-        content: '¡Día increíble en el Parque de la Costa! Las montañas rusas y los juegos acuáticos fueron lo mejor. ¡Totalmente recomendado!',
+        title: 'Diversión en el EcoParque',
+        content: '¡Día increíble en el EcoParque de Bs As! El cóndor y las jirafas fueron lo mejor. ¡Totalmente recomendado!',
         createdAt: new Date(),
         updatedAt: new Date()
       },
