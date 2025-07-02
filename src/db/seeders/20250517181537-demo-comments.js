@@ -55,14 +55,14 @@ module.exports = {
       { postId: 6, userId: 5, comment: '¡Arrancando el lunes con power!', createdAt: now, updatedAt: now },
       { postId: 6, userId: 2, comment: 'Café + comunidad = día perfecto.', createdAt: now, updatedAt: now },
 
-      // POST 7 ¡Día increíble en el Parque de la Costa!
+      // POST 7 ¡Día increíble en el EcoParque!
       { postId: 7, userId: 2, comment: '¡Qué envidia! Me encantaría ir.', createdAt: now, updatedAt: now },
       { postId: 7, userId: 1, comment: '¡Se ve que la pasaron genial! ', createdAt: now, updatedAt: now },
-      { postId: 7, userId: 3, comment: '¡El Parque de la Costa es lo más! 🎉', createdAt: now, updatedAt: now },
+      { postId: 7, userId: 3, comment: '¡El EcoParque es lo más! 🎉', createdAt: now, updatedAt: now },
       { postId: 7, userId: 1, comment: '¡Qué nostalgia ese lugar!', createdAt: now, updatedAt: now },
-      { postId: 7, userId: 4, comment: '¿Fuiste a la Vuelta al Mundo?', createdAt: now, updatedAt: now },
-      { postId: 7, userId: 3, comment: '¡Lo tengo pendiente!', createdAt: now, updatedAt: now },
-      { postId: 7, userId: 2, comment: 'Me diste ganas de organizar una salida.', createdAt: now, updatedAt: now },
+      { postId: 7, userId: 2, comment: '¿Había monitos?🙈🙉🙊', createdAt: now, updatedAt: now },
+      { postId: 7, userId: 5, comment: '¡Lo tengo pendiente!', createdAt: now, updatedAt: now },
+      { postId: 7, userId: 4, comment: 'Me diste ganas de organizar una salida.', createdAt: now, updatedAt: now },
 
       // POST 8 Paseando a mi perro Rocco
       { postId: 8, userId: 5, comment: '¡Rocco es hermoso! Disfruten el paseo.', createdAt: now, updatedAt: now },
