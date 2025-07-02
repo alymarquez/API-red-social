@@ -80,7 +80,14 @@ module.exports = {
         content: '¡Salida al cine! A ver la última película de acción. ¿Alguna recomendación para la próxima?',
         createdAt: new Date(),
         updatedAt: new Date()
-      }
+      },
+      {
+        userId: 1,
+        title: '¡Retro Start 10 Años!',
+        content: '👾 El 5 y 6 de Julio festejamos 10 años del mejor evento de videojuegos retro de Argentina! 3 PISOS gigantescos con 2 ESCENARIOS!!! Repletos de actividades, shows, desafíos, invitados, charlas, concursos y sorteos!!!',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
     ]);
   },
 

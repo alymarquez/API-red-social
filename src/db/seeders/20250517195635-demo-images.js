@@ -93,7 +93,15 @@ module.exports = {
         url: "https://i.ibb.co/ym05g3Gq/IMG-20200810-WA0003.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      // Post 8: '¡Retro Start 10 Años!'
+      {
+        postId: 12,
+        url: "https://i.ibb.co/whxQP3cy/retrostart.jpg",
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
+
     ]);
   },
 

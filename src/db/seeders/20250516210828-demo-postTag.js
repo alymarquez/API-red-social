@@ -104,6 +104,18 @@ module.exports = {
         tagId: 2, // VidaDiaria
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        postId: 12,
+        tagId: 3, // VidaDiaria
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        postId: 12,
+        tagId: 6, // VidaDiaria
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ]);
   },
